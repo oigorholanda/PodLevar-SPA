@@ -1,0 +1,29 @@
+{
+  "name": "podlevar",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A donation platform that aims to connect charitable people and people in need of donations",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "13.4.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oigorholanda/PodLevar-SPA.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oigorholanda/PodLevar-SPA/issues"
+  },
+  "homepage": "https://github.com/oigorholanda/PodLevar-SPA#readme"
+}
