@@ -1,6 +1,9 @@
+import Link from 'next/link';
+
 export default function Email() {
     return(
-    <h1>
-    Mail me
-    </h1>)
+    <Link href="/">
+        <h2>Mail me</h2>
+    </Link>
+    )
 }

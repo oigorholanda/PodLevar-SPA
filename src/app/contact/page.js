@@ -1,6 +1,8 @@
+import Link from "next/link"
+
 export default function Contact() {
     return(
-    <h1>
+    <Link href="/">
     Estou na pasta contatos
-    </h1>)
+    </Link>)
 }
