@@ -59,7 +59,7 @@ export default function Home() {
         </Link>
 
         <Link
-          href="/product/10"
+          href="/product/10/7"
           className={styles.card}
         >
           <h2>
