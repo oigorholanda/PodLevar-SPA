@@ -2,17 +2,18 @@
 
 import Header from "@/components/Header"
 import { color17, color18 } from "@/constants/colors"
-import { useRouter } from "next/navigation"
+import { usePathname, useRouter } from "next/navigation"
 import { styled } from "styled-components"
 
 export default function About() {
     const router = useRouter()
+    const path = usePathname()
 
     return(
         <>
         <Header/>
         <Container >
-    Estou na tela de novo pedido de doação
+    Estou na tela {path}
     <Back onClick={() => router.push('/')}>Voltar</Back>
     </Container></>
 )

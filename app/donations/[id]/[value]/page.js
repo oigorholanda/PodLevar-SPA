@@ -9,7 +9,7 @@ export default function Product({params}) {
     
     return (
     <Link href="/"> 
-        Estou visualisando  o produto de numero: {params.id} nessa {search} nº {params.value}
+        Estou visualisando  o produto de numero: {params.id} nessa {searchParams} nº {params.value}
     </Link>
     )
 }
