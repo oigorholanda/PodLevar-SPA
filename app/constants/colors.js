@@ -21,31 +21,12 @@ export const color18 = '#3f4a4b'
 export const color19 = '#aaaaaa'
 export const color20 = '#dcdcdc'
 
-// Paleta Azul Suave:
-// Primária: #3D6FD9
-// Secundária: #85A9F0
-// Destaque: #F0C985
-// Neutro 1: #E0E8F5
-// Neutro 2: #F5F7FA
-
-// Paleta Verde Natural:
-// Primária: #42A97A
-// Secundária: #85D6AF
-// Destaque: #F0E685
-// Neutro 1: #E0F5D8
-// Neutro 2: #F5FAF2
-
-// Paleta Laranja Aconchegante: 
-// Primária: #E76A29
-// Secundária: #FFA966
-// Destaque: #F0D985
-// Neutro 1: #F5E5D8
-// Neutro 2: #FAF2F0
+export const color21 = '#3D6FD9'
+export const color22 = '#85A9F0'
+export const color23 = '#F0C985'
+export const color24 = '#E0E8F5'
+export const color25 = '#F5F7FA'
 
 
-export const color21 = ''
-export const color22 = ''
-export const color23 = ''
-export const color24 = ''
-export const color25 = ''
+
 

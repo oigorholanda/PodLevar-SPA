@@ -2,11 +2,12 @@
 
 import Link from 'next/link'
 import { styled } from 'styled-components'
+import {notFound } from 'next/navigation'
 
 export default function Email() {
    return (
       <Link href="/">
-         <Back>Mail me</Back>
+        {notFound()}
       </Link>
    )
 }

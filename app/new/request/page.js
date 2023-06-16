@@ -1,35 +1,32 @@
 'use client'
 
-import Header from "@/components/Header"
-import { color17, color18 } from "@/constants/colors"
-import { usePathname, useRouter } from "next/navigation"
-import { styled } from "styled-components"
+import Header from '@/components/Header'
+import Page from '@/components/Page'
+import { color17, color18 } from '@/constants/colors'
+import { usePathname, useRouter } from 'next/navigation'
+import { styled } from 'styled-components'
 
 export default function About() {
-    const router = useRouter()
-    const path = usePathname()
+   const router = useRouter()
+   const path = usePathname()
 
-    return(
-        <>
-        <Header/>
-        <Container >
-    Estou na tela {path}
-    <Back onClick={() => router.push('/')}>Voltar</Back>
-    </Container></>
-)
+   return (
+      <>
+         <Header />
+         <Container>
+            Estou na tela {path}
+            <Back onClick={() => router.push('/')}>Voltar</Back>
+         </Container>
+      </>
+   )
 }
-const Container = styled.div`
-    background-color: ${color17};
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color:${color18}
+const Container = styled(Page)`
+   background-color: ${color17};
+   color: ${color18};
 `
 
 const Back = styled.button`
-    margin-top: 20px;
-    width: 200px;
-    height: 50px;
+   margin-top: 20px;
+   width: 200px;
+   height: 50px;
 `
