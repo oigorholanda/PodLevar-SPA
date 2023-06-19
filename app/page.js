@@ -9,15 +9,8 @@ export default function Home() {
     <main className={styles.main}>
         <Header />
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className={styles.container}>
+    <p>Não há nada aqui ainda =/</p>
       </div>
 
       

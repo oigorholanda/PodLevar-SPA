@@ -8,8 +8,8 @@ import { usePathname, useRouter } from 'next/navigation'
 import { useState } from 'react'
 import { styled } from 'styled-components'
 
-export default function About() {
-   const [logged, setLogged] = useState(true)
+export default function Donation() {
+   const [logged, setLogged] = useState(false)
    const router = useRouter()
    const path = usePathname()
 
@@ -17,24 +17,34 @@ export default function About() {
       <>
          <Header />
          <Container>
-            {/* Estou na tela {path}
-            <Back onClick={() => router.push('/')}>Voltar</Back> */}
-            {logged && (
-               <h2>
-                  Faça seu login antes
-                  <GoToLogin onClick={() => router.push('/login')}>Login</GoToLogin>
-               </h2>
+            <section>Estou na tela {path}</section>
+
+            {!logged && (
+               <>
+                  <p>É necessário realizar o login para postar doações</p>
+                  <GoToLogin onClick={() => router.push('/login')}>Fazer Login</GoToLogin>
+               </>
             )}
          </Container>
       </>
    )
 }
+
 const Container = styled(Page)`
+   justify-content: center;
    background-color: ${color17};
    color: ${color18};
+   section {
+      position: fixed;
+      right: 10px;
+      top: 13vh;
+      text-align: end;
+   }
 `
 const GoToLogin = styled(Button)`
+   width: 30%;
    height: 60px;
+   margin-top: 50px;
 `
 
 const Back = styled.button`

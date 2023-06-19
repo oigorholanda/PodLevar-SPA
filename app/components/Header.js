@@ -3,21 +3,7 @@
 import Link from 'next/link'
 import { styled } from 'styled-components'
 import { BiDonateHeart } from 'react-icons/bi'
-import {
-   color1,
-   color11,
-   color12,
-   color13,
-   color14,
-   color15,
-   color16,
-   color17,
-   color2,
-   color3,
-   color4,
-   color5,
-   color6,
-} from '@/constants/colors'
+import { color12, color15 } from '@/constants/colors'
 
 export default function Header() {
    return (
@@ -48,13 +34,17 @@ export default function Header() {
 }
 
 const Container = styled.div`
-   width: 100dvw;
+   width: 100vw;
    height: 10vh;
    display: flex;
    justify-content: space-evenly;
    align-items: center;
    background-color: ${color15};
    padding: 2rem;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 100;
    color: white;
    h1 {
       display: flex;

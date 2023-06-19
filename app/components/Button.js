@@ -1,4 +1,4 @@
-import { color1, color12, color18, color14, color2, color3, color6, color10, color15, color20 } from "@/constants/colors";
+import { color1, color12, color14 } from "@/constants/colors";
 import { styled } from "styled-components";
 
 export default styled.button`
@@ -11,13 +11,14 @@ export default styled.button`
     border: none;
 	border-radius: 10px;
 	text-transform: uppercase;
-	font-size: 0.35em;
+	font-size: 0.65em;
     font-weight: 600;
     margin: 20px;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
 	&:hover {
-        color: rgb(8, 54, 54);
+        color: black;
+        text-shadow: 2px 2px 4px white;
         transition: all .4s ease-in-out;
         background-position: 110% 0;
     }

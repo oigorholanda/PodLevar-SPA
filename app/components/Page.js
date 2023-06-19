@@ -5,12 +5,12 @@ export default styled.div`
   background-size: cover;
   min-height: 100vh;
   width: 100%;
-  padding: 20px;
+  padding-top: 13vh;
   display: flex;
-  justify-content: center;
+  //justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 40px;
+  font-size: 30px;
 
   & > *:not(:last-child) {
     margin-bottom: 24px;

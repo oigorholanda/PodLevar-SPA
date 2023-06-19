@@ -1,6 +1,7 @@
 'use client'
 
 import Header from "@/components/Header"
+import Page from "@/components/Page"
 import { color17, color18 } from "@/constants/colors"
 import { usePathname, useRouter } from "next/navigation"
 import { styled } from "styled-components"
@@ -12,20 +13,23 @@ export default function Donations() {
     return(
         <>
         <Header/>
-        <Container >
-    Estou na tela {path}
+        <Container>
+    <section>Estou na tela {path}</section>
+    <p>Ainda não há doações registradas</p>
     <Back onClick={() => router.push('/')}>Voltar</Back>
     </Container></>
 )
 }
-const Container = styled.div`
+const Container = styled(Page)`
+justify-content: center;
     background-color: ${color17};
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color:${color18}
+    color:${color18};
+    section {
+      position: fixed;
+      right: 10px;
+      top: 13vh;
+      text-align: end;
+   }
 `
 
 const Back = styled.button`
