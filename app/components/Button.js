@@ -4,7 +4,7 @@ import { styled } from "styled-components";
 export default styled.button`
     background-image: linear-gradient(to right, ${color12}, ${color1}, ${color14}, ${color12});  
     background-size: 300% 100%;
-    width: 50%;
+    width: 100%;
     height: 40px;
     box-shadow: 0 4px 13px 0 rgba(229, 66, 10, 0.6);
     color: black;

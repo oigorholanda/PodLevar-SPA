@@ -5,8 +5,7 @@ import Page from '@/components/Page'
 import { color12, color13, color16, color17, color18 } from '@/constants/colors'
 import { TabContext, TabList, TabPanel } from '@mui/lab'
 import { Box, Tab } from '@mui/material'
-import { orange } from '@mui/material/colors'
-import { publicDecrypt } from 'crypto'
+import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
@@ -62,11 +61,13 @@ export default function Login() {
                         {...register('Password', { required: true, maxLength: 100 })}
                      />
                   </div>
+                  <Link href="/signup">Não possui login? Inscreva-se</Link>
+                  <Submit type="submit">Enviar</Submit>
                </TabPanel>
-               <TabPanel value={1}>Item Two</TabPanel>
+               <TabPanel value={1}>Em Breve</TabPanel>
             </TabContext>
 
-            <Submit type="submit">Enviar</Submit>
+            
          </form>
       </Container>
    )
@@ -93,6 +94,10 @@ const Container = styled(Page)`
    }
    h2 {
       cursor: pointer;
+   }
+   a {
+    font-size: 15px;
+    text-decoration: underline;
    }
 `
 
