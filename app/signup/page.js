@@ -21,10 +21,7 @@ export default function Login() {
       watch,
       formState: { errors },
    } = useForm()
-   const onSubmit = (data) => {
-      console.log(data)
-      router.push('/')
-   }
+   const onSubmit = (data) => console.log(data)
 
    const handleChange = (event, newValue) => {
       setValue(newValue)
@@ -39,13 +36,12 @@ export default function Login() {
          </h2>
          <form onSubmit={handleSubmit(onSubmit)}>
             <TabContext value={value}>
-               <p>LOGIN</p>
-               {/* <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+               <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
                   <ColoredTab onChange={handleChange} textColor="inherit" aria-label="lab API tabs example">
                      <Tab label="Sou doador" value={0} />
                      <Tab label="Sou instituição" value={1} />
                   </ColoredTab>
-               </Box> */}
+               </Box>
                <TabPanel value={0}>
                   <div>
                      <label htmlFor="Email">Email</label>
@@ -65,7 +61,7 @@ export default function Login() {
                         {...register('Password', { required: true, maxLength: 100 })}
                      />
                   </div>
-                  <Link href="/signup">Não possui login? Inscreva-se</Link>
+                  <Link href="/login">Já está inscrito? Faça login</Link>
                   <Submit type="submit">Enviar</Submit>
                </TabPanel>
                <TabPanel value={1}>Em Breve</TabPanel>
@@ -82,7 +78,7 @@ const Container = styled(Page)`
       width: 30%;
       background-color: white;
       border-radius: 10px;
-      padding: 20px;
+      padding: 10px 20px;
       color: black;
       display: flex;
       flex-direction: column;

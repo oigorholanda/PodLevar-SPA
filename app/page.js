@@ -10,7 +10,9 @@ export default function Home() {
         <Header />
 
       <div className={styles.container}>
-    <p>Não há nada aqui ainda =/</p>
+    <p>Não to usando, pode levar...</p>
+    <br />
+    <p>Cadastre suas doações para ajudar quem precisa. </p>
       </div>
 
       
